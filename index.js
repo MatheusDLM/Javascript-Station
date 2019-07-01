@@ -1,37 +1,38 @@
 // Atv 1
 
-function Pessoa() {
-    var endereco = {
-        rua: "Rua dos pinheiros",
-        numero: 1293,
-        bairro: "Centro",
-        cidade: "São Paulo",
+function Person() {
+    var address = {
+        street: "Rua dos pinheiros",
+        number: 1293,
+        district : "Centro",
+        city: "São Paulo",
         uf: "SP"
     };
-    console.log('O usuario mora em ' + endereco.cidade + '/' + endereco.uf + ', no bairro ' + endereco.bairro, ', na rua " ', endereco.rua + '"', ' com nº ' + endereco.numero, '.');
+    console.log('The user lives in ' + address.city + '/' + address.uf + ', in district ' + address.district, ', in street "', address.street + '"', ' with nº ' + address.number, '.');
 };
 
-// Pessoa();
+Person();
 
 // Atv 2
 
-function pares(x, y) {
+function Pairs(x, y) {
     for (x; x < y; x++) {
         if (x % 2 == 0) {
             console.log(x);
         }
     }
 }
-// pares(32, 321);
+
+Pairs(32, 321); // chamando a função com os numeros x e y
 
 
 // Atv 3
 
 
 
-function temHabilidade(skills) {
+function haveSkill(skills) {
 
-    var resultado = skills.indexOf("ReactJS");
+    var resultado = skills.indexOf("Javascript");
 
     if (resultado < 0) {
         console.log('False')
@@ -41,44 +42,46 @@ function temHabilidade(skills) {
 }
 
 var skills = ["Javascript", "ReactJS", "React Native"];
-// temHabilidade(skills); // true ou false
+haveSkill(skills); // true ou false
 
 
 // Atv 4
 
-function experiencia(anos) {
-    if (anosEstudo < 2) {
-        console.log('Iniciante')
-    } else if (anos > 1 && anos < 4) {
-        console.log('Intermediario')
-    } else if (anos > 3 && anos < 7) {
-        console.log('Avançado')
-    } else if (anos > 6) {
+function experience(year) {
+    if (yearsStudy < 2) {
+        console.log('Beginner')
+    } else if (year > 1 && year < 4) {
+        console.log('Intermediate')
+    } else if (year > 3 && year < 7) {
+        console.log('Advanced')
+    } else if (year > 6) {
         console.log('Jedi Master')
     }
 }
-var anosEstudo = 3;
-// De 0-1 ano: Iniciante
-// De 1-3 anos: Intermediário
-// De 3-6 anos: Avançado
+var yearsStudy = 3;
+// De 0-1 ano: Beginner (Iniciante)
+// De 1-3 anos: Intermediate (Intermediário)
+// De 3-6 anos: Advanced (Avançado)
 // De 7 acima: Jedi Master
-// experiencia(anosEstudo);
+experience(yearsStudy);
 
 // Atv 5
 
-var usuarios = [
+var user = [
     {
-        nome: "Diego",
-        habilidades: ["Javascript", "ReactJS", "Redux"]
+        name: "Diego",
+        hability: ["Javascript", "ReactJS", "Redux"]
     },
     {
-        nome: "Gabriel",
-        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        name: "Gabriel",
+        hability: ["VueJS", "Ruby on Rails", "Elixir"]
     }
-]; 
+];
 
-
-
+for (var i = 0; i < user.length; i++)
+{
+        console.log(user[i].name + " has the skills: " + user[i].hability.join());
+}
 
 
 
