@@ -37,26 +37,26 @@ function getRandomColor() {
 
 // question 3
 
-var names = ["Matheus", "Jefferson", "David"];
-var listElement = document.createElement('ul');
+var names = ["Matheus", "Jefferson", "David"]; // cria vetor com nomes
+var listElement = document.createElement('ul'); // cria ul
 
-appElement.appendChild(listElement);
+appElement.appendChild(listElement); // acrescenta a lista no ul
 
-for(var i=0; i<names.length; i++){
-    var itemtlistElement = document.createElement('li');
-    itemtlistElement.appendChild(document.createTextNode(names[i]));
-    listElement.appendChild(itemtlistElement);
+for(var i=0; i<names.length; i++){ 
+    var itemtlistElement = document.createElement('li'); // cria li na ul
+    itemtlistElement.appendChild(document.createTextNode(names[i])); // percorre todos os itens no vetor
+    listElement.appendChild(itemtlistElement); // mostra todos os itens no vetor
 };
 
 // question 4
 
-var input = document.querySelector("input");
-var ul = document.querySelector("ul");
-function addItem() {
-    var text = document.createTextNode(input.value);
-    ul.appendChild(text);
-    var list = document.createElement("li");
-    ul.appendChild(list);
-    list.appendChild(text);
-    input.value = "";
+var input = document.querySelector("input"); //seleciona input
+var ul = document.querySelector("ul"); //seleciona ul
+function addItem() { //função para adicionar os itens ao ul
+    var text = document.createTextNode(input.value); // pega valor no input
+    ul.appendChild(text); //acrescenta valor do input
+    var list = document.createElement("li"); // cria uma li para cada componente
+    ul.appendChild(list); // acrescenta a li na ul
+    list.appendChild(text); // mostra a ul
+    input.value = ""; // zera tudo para não ficar repetido
 }
