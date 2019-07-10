@@ -50,13 +50,13 @@ for(var i=0; i<names.length; i++){
 
 // question 4
 
-var input = document.querySelector("input"); //seleciona input
-var ul = document.querySelector("ul"); //seleciona ul
-function addItem() { //função para adicionar os itens ao ul
-    var text = document.createTextNode(input.value); // pega valor no input
-    ul.appendChild(text); //acrescenta valor do input
-    var list = document.createElement("li"); // cria uma li para cada componente
-    ul.appendChild(list); // acrescenta a li na ul
-    list.appendChild(text); // mostra a ul
-    input.value = ""; // zera tudo para não ficar repetido
+var input = document.querySelector("input"); //seleciona input | select input
+var ul = document.querySelector("ul"); //seleciona ul | select ul
+function addItem() { //função para adicionar os itens ao ul | function for add items in ul
+    var text = document.createTextNode(input.value); // pega valor no input | capture value in input
+    ul.appendChild(text); //acrescenta valor do input | add value of input
+    var list = document.createElement("li"); // cria uma li para cada componente | create li for each component
+    ul.appendChild(list); // acrescenta a li na ul | insert the li in ul
+    list.appendChild(text); // mostra a ul | show the ul
+    input.value = ""; // zera tudo para não ficar repetido | reset all
 }
