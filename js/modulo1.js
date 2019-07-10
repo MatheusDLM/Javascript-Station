@@ -82,6 +82,3 @@ for (var i = 0; i < user.length; i++)
 {
         console.log(user[i].name + " has the skills: " + user[i].hability.join());
 }
-
-
-
