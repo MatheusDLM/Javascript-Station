@@ -1,0 +1,27 @@
+<html>
+
+<head>
+
+<body>
+    <input type="text" name="input" placeholder="Inside the square">
+    <button onclick="create()">Add square</button>
+    <div id="squareObject" name="squareObject"></div>
+    <script>
+        let input = document.querySelector("input")
+        let button = document.querySelector("button")
+        let squareObject = document.querySelector("#squareObject")
+        let text = document.createTextNode("input.value")
+        function create() {
+            //alert(input.value)
+            square = document.createElement("div") //Criando div interna
+            square.style.height = 100
+            square.style.width = 100
+            square.style.backgroundColor = "rgba(255,0,0,0.9)"
+            square.innerHTML = input.value //innerHTML = "Texto dentro da div"
+            squareObject.appendChild(square) //Colocando div dentro do da div principal
+            input.value = ""
+        }</script>
+</body>
+</head>
+
+</html>
