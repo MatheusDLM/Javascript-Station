@@ -1,10 +1,10 @@
 // Atv 1
 function checkAge() { // Função para checar idade -- Function for check age
     let checkPromise = new Promise((resolve, reject) => { // Valida o resolve() que vai para o .then ou reject() que vai para o .catch -- Validate the resolve() that goes to the .then or reject() that goes to the .catch
-        input = document.querySelector("input")  //seleciona input -- select input
+        input = document.querySelector('input[name="age"]')  //seleciona input -- select input
         age = input.value // Diz que idade é o valor digitado no input -- age receives input value 
         input.value = "" // Limpa o input -- clean input
-        if (idade > 18) {  // Se idade for maior que 18, cai no resolve() -- If age is greater than 18, go to resolve()
+        if (age > 18) {  // Se idade for maior que 18, cai no resolve() -- If age is greater than 18, go to resolve()
             resolve()
         } else { // Senão reject() -- Else reject()
             reject()
