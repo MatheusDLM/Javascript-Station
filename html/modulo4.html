@@ -1,13 +1,38 @@
 <html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modulo 4</title>
+    <style>
+    .atv1 {
+        margin: 0em 0em 2em 0em;
+    }
+    </style>
+</head>
 
 <body>
-    <input type="text" placeholder="Digite sua idade">
-    <button onclick="add()">Checar</button>
+    <div class="atv1">
+        <h3>Atv 1</h3>
+        <input type="text" placeholder="Digite sua idade">
+        <button onclick="checkAge()">Checar</button>
+    </div>
+
+    <div class="atv2">
+        <h3>Atv 2 e 3</h3>
+        <input type="text" name="user">
+        <button onclick="listarRepositorios()">Adicionar</button>
+
+        <ul></ul>
+
+    </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../js/modulo4.js"></script>
+
 </body>
-</head>
 
 </html>
